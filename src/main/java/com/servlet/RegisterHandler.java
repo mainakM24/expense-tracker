@@ -26,7 +26,7 @@ public class RegisterHandler extends HttpServlet {
     String password = request.getParameter("password");
     String confirmPassword = request.getParameter("cnf-password");
     
-    if(password != confirmPassword) {
+    if(!password.equals(confirmPassword)) {
     	request.setAttribute("message", "Wrong confirm Password");
         request.getRequestDispatcher("register.jsp").include(request, response);
         return;

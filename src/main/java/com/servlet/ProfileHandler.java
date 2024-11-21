@@ -11,7 +11,7 @@ import java.io.IOException;
 
 import com.model.User;
 
-
+@WebServlet({"/ProfileHandler", "/profile"})
 public class ProfileHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

@@ -12,6 +12,7 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
+@WebServlet({"/BudgetHandler", "/budget"})
 public class BudgetHandler extends HttpServlet {
   private static final long serialVersionUID = 1L;
 

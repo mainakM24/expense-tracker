@@ -12,7 +12,7 @@ import java.io.IOException;
 import com.dao.UserDAO;
 import com.model.User;
 
-
+@WebServlet({"/DeleteAccountHandler", "/deleteAccount"})
 public class DeleteAccountHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

@@ -12,7 +12,7 @@ import java.io.IOException;
 import com.dao.UserDAO;
 import com.model.User;
 
-
+@WebServlet({"/UpdateUserHandler", "/updateUser"})
 public class UpdateUserHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -33,7 +33,7 @@ public class UpdateUserHandler extends HttpServlet {
 			return;
 		}
 		
-		//Retrieving form datas
+		//Retrieving form data
 		int userId = user.getId();
 		String username = request.getParameter("uname");
 		String email = request.getParameter("email");

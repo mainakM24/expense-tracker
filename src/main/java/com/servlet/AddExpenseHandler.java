@@ -11,6 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 
+@WebServlet({"/AddExpenseHandler", "/addExpense", "/budgetDetails/addExpense"})
 public class AddExpenseHandler extends HttpServlet {
   private static final long serialVersionUID = 1L;
 

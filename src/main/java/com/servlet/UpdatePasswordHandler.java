@@ -12,7 +12,7 @@ import java.io.IOException;
 import com.dao.UserDAO;
 import com.model.User;
 
-
+@WebServlet({"/UpdatePasswordHandler", "/updatePassword"})
 public class UpdatePasswordHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

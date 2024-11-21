@@ -10,6 +10,7 @@ import java.io.IOException;
 import com.dao.BudgetDAO;
 import com.model.Budget;
 
+@WebServlet({"/EditBudgetHandler", "/editBudget"})
 public class EditBudgetHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

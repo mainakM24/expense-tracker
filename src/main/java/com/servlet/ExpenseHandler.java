@@ -16,6 +16,7 @@ import com.model.Expense;
 import com.model.User;
 
 
+@WebServlet({"/ExpenseHandler", "/expense"})
 public class ExpenseHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

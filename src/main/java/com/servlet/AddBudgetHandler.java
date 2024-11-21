@@ -13,7 +13,7 @@ import com.dao.BudgetDAO;
 import com.model.Budget;
 import com.model.User;
 
-
+@WebServlet({"/AddBudgetHandler", "/addBudget"})
 public class AddBudgetHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

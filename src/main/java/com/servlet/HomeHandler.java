@@ -16,7 +16,7 @@ import com.model.Budget;
 import com.model.Expense;
 import com.model.User;
 
-
+@WebServlet({"/HomeHandler", "/home"})
 public class HomeHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

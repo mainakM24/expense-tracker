@@ -16,7 +16,7 @@ import com.model.Budget;
 import com.model.Expense;
 import com.model.User;
 
-
+@WebServlet({"/DashboardHandler", "/dashboard"})
 public class DashboardHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

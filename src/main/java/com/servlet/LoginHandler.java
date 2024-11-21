@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 
+@WebServlet({"/LoginHandler", "/login"})
 public class LoginHandler extends HttpServlet {
   private static final long serialVersionUID = 1L;
 

@@ -17,6 +17,7 @@
                 <th class="text-center py-3 px-4 font-semibold">Budget Name</th>
                 <th class="text-center py-3 px-4 font-semibold">Amount</th>
                 <th class="text-center py-3 px-4 font-semibold">Date</th>
+                <th class="text-center py-3 px-4 font-semibold">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -26,6 +27,14 @@
                 <td class="text-center py-3 px-4"><%= BudgetDAO.getBudgetById(String.valueOf(expense.getBudget_id())).getBudget_name() %></td>
                 <td class="text-center py-3 px-4">$<%= expense.getExpense_amount() %></td>
                 <td class="text-center py-3 px-4"><%= expense.getExpense_created_at() %></td>
+                <td class="text-center py-3 px-4">
+                	<form action="${pageContext.request.contextPath}/deleteOnlyExpense" method="post" class="inline-block">
+	              		<input type="hidden" name="expenseId" value="<%= expense.getExpense_id() %>">
+              			<button type="submit" class="text-red-500 hover:underline text-bold">
+              				<span class="material-icons hover:border-2 rounded-md hover:scale-110">delete</span>
+              			</button>
+          		  </form>
+                </td>
               </tr>
               <%} %>
             </tbody>
